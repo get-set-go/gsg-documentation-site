@@ -1,3 +1,5 @@
+import './Components.less';
+
 import React from 'react';
 
 import Sidebar from '../../components/Sidebar';
