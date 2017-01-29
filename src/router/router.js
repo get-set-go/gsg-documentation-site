@@ -10,6 +10,19 @@ import HomePage from '../pages/Home';
 import GettingStartedPage from '../pages/GettingStarted';
 import ComponentsPage from '../pages/Components';
 import ErrorPage from '../pages/Error';
+import {
+  AlertPage,
+  ButtonPage,
+  BadgePage,
+  BlockquotePage,
+  JumbotronPage,
+  PanelPage,
+  LoaderPage,
+  LabelPage,
+  ProgressBarPage,
+  ThumbnailPage,
+  FullScreenPage
+} from '../pages/Sidebars';
 
 const Routes = (
   <Router history={appHistory}>
@@ -17,7 +30,20 @@ const Routes = (
       <IndexRoute component = {HomePage} />
       <Route path = "home" component = {HomePage} />
       <Route path = "started" component = {GettingStartedPage} />
-      <Route path = "components" component = {ComponentsPage} />
+      <Route path = "components" component = {ComponentsPage}>
+        <IndexRedirect to = "/components/jumbotron" />
+        <Route path = "jumbotron" component = {JumbotronPage} />
+        <Route path = "alert" component = {AlertPage} />
+        <Route path = "button" component = {ButtonPage} />
+        <Route path = "badge" component = {BadgePage} />
+        <Route path = "blockquote" component = {BlockquotePage} />
+        <Route path = "panel" component = {PanelPage} />
+        <Route path = "loader" component = {LoaderPage} />
+        <Route path = "label" component = {LabelPage} />
+        <Route path = "progressbar" component = {ProgressBarPage} />
+        <Route path = "thumbnail" component = {ThumbnailPage} />
+        <Route path = "fullscreen" component = {FullScreenPage} />
+      </Route>
     </Route>
     <Route path="*" component={ErrorPage}/>
   </Router>

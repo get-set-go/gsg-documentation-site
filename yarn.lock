@@ -1006,6 +1006,10 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
+bootstrap@^3.3.7:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
+
 brace-expansion@^1.0.0:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.6.tgz#7197d7eaa9b87e648390ea61fc66c84427420df9"
@@ -1979,6 +1983,12 @@ file-entry-cache@^2.0.0:
     flat-cache "^1.2.1"
     object-assign "^4.0.1"
 
+file-loader@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-0.10.0.tgz#bbe6db7474ac92c7f54fdc197cf547e98b6b8e12"
+  dependencies:
+    loader-utils "~0.2.5"
+
 filename-regex@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/filename-regex/-/filename-regex-2.0.0.tgz#996e3e80479b98b9897f15a8a58b3d084e926775"
@@ -2027,6 +2037,10 @@ flat-cache@^1.2.1:
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
+
+font-awesome@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
 
 for-in@^0.1.5:
   version "0.1.6"
@@ -2184,6 +2198,90 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.4, graceful-fs@^4.1.6:
 growly@^1.2.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
+
+"gsg-alert@https://github.com/get-set-go/gsg-alert.git":
+  version "0.0.5"
+  resolved "https://github.com/get-set-go/gsg-alert.git#617aad10438359224a8ae27b01865efd627dfe0b"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "git+https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
+"gsg-badge@https://github.com/get-set-go/gsg-badge.git":
+  version "0.0.7"
+  resolved "https://github.com/get-set-go/gsg-badge.git#2636a3f3ea7620d42851190eda7ee66c5a7dc11d"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
+"gsg-blockquote@https://github.com/get-set-go/gsg-blockquote.git":
+  version "0.0.2"
+  resolved "https://github.com/get-set-go/gsg-blockquote.git#315f1c6401bafcc270193e8aed66b2ab184f2f97"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
+"gsg-button@https://github.com/get-set-go/gsg-button.git":
+  version "0.1.2"
+  resolved "https://github.com/get-set-go/gsg-button.git#6f5334e75f979f50e793af44b2cf78219d2d4636"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
+"gsg-common-style@git+https://github.com/get-set-go/gsg-common-style.git", "gsg-common-style@https://github.com/get-set-go/gsg-common-style.git":
+  version "0.0.7"
+  resolved "git+https://github.com/get-set-go/gsg-common-style.git#6e66386c06b0c8f4342b7d318b3ec5c304b892db"
+
+"gsg-label@https://github.com/get-set-go/gsg-label.git":
+  version "0.0.5"
+  resolved "https://github.com/get-set-go/gsg-label.git#6da7313e78a51c9a6bcb59696e3c112a2b0d4070"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
+"gsg-loader@https://github.com/get-set-go/gsg-loader.git":
+  version "0.0.2"
+  resolved "https://github.com/get-set-go/gsg-loader.git#383f1666ab71d27f35fd732d2f8750fd402e7c17"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
+"gsg-panel@https://github.com/get-set-go/gsg-panel.git":
+  version "0.0.7"
+  resolved "https://github.com/get-set-go/gsg-panel.git#2c031653c69956047398ed8ffe165b9513f4dba9"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
+"gsg-thumbnail@https://github.com/get-set-go/gsg-thumbnail.git":
+  version "0.0.2"
+  resolved "https://github.com/get-set-go/gsg-thumbnail.git#e8d7f26164eefdb00b0063fa3717eab8ec12aff7"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
 
 handlebars@^4.0.1, handlebars@^4.0.3:
   version "4.0.6"
@@ -3056,7 +3154,7 @@ load-json-file@^1.0.0:
     pinkie-promise "^2.0.0"
     strip-bom "^2.0.0"
 
-loader-utils@0.2.x, loader-utils@^0.2.11, loader-utils@^0.2.16, loader-utils@^0.2.5, loader-utils@^0.2.7, loader-utils@~0.2.2:
+loader-utils@0.2.x, loader-utils@^0.2.11, loader-utils@^0.2.16, loader-utils@^0.2.5, loader-utils@^0.2.7, loader-utils@~0.2.2, loader-utils@~0.2.5:
   version "0.2.16"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-0.2.16.tgz#f08632066ed8282835dff88dfb52704765adee6d"
   dependencies:
