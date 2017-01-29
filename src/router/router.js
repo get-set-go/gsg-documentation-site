@@ -9,6 +9,8 @@ import App from '../app.js';
 import HomePage from '../pages/Home';
 import GettingStartedPage from '../pages/GettingStarted';
 import ComponentsPage from '../pages/Components';
+import ExpoPage from '../pages/Expo';
+import AboutPage from '../pages/About';
 import ErrorPage from '../pages/Error';
 import {
   AlertPage,
@@ -30,6 +32,8 @@ const Routes = (
       <IndexRoute component = {HomePage} />
       <Route path = "home" component = {HomePage} />
       <Route path = "started" component = {GettingStartedPage} />
+      <Route path = "expo" component = {ExpoPage} />
+      <Route path = "about" component = {AboutPage} />
       <Route path = "components" component = {ComponentsPage}>
         <IndexRedirect to = "/components/jumbotron" />
         <Route path = "jumbotron" component = {JumbotronPage} />
