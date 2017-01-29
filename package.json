@@ -11,10 +11,11 @@
     "clean:coverage": "rimraf coverage",
     "bundle:watch": "yarn run clean:dist && webpack --config \"./configs/build/dev.webpack.config.js\" --progress -d --watch",
     "bundle:dev": "yarn run clean:dist && webpack --config \"./configs/build/dev.webpack.config.js\" --progress -p -d",
-    "build": "yarn run clean:dist && yarn run lint && yarn run test && webpack --config \"./configs/build/prod.webpack.config.js\" --progress -p",
+    "build": "yarn run clean:dist && yarn run lint && webpack --config \"./configs/build/prod.webpack.config.js\" --progress -p",
     "test": "yarn run clean:coverage && jest --bail --verbose --coverage",
     "lint": "eslint configs src",
-    "lint:fix": "eslint --fix configs src"
+    "lint:fix": "eslint --fix configs src",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
