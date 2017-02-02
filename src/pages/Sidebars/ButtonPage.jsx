@@ -32,6 +32,11 @@ export default class ButtonPage extends React.Component {
     const _buttonEnabledEg = `<Button isActive>Enabled Button</Button>`;
     const _buttonDisabledEg = `<Button isDisabled>Disabled Button</Button>`;
     const _buttonClickEg = `<Button onClick={this.message}>Click Button</Button>`;
+    const _buttonNormalEg = `<Button>Normal Button</Button>`;
+    const _buttonLargeEg = `<Button bSize="lg">Large Button</Button>`;
+    const _buttonSmallEg = `<Button bSize="sm">Small Button</Button>`;
+    const _buttonExtraSmallEg = `<Button bSize="xs">Extra Small Button</Button>`;
+    const _buttonBlockEg = `<Button isBlock>Block Button</Button>`;
 
     return (
       <div className="component-page">
@@ -96,6 +101,31 @@ export default class ButtonPage extends React.Component {
 
           <CodeBlocks title="Click button example" code={_buttonClickEg}>
             <Button onClick={this.message}>Click Button</Button>
+          </CodeBlocks>
+        </div>
+
+        <div className="component-box component-example">
+          <h3>Sizes</h3>
+
+          <CodeBlocks title="Normal button example" code={_buttonNormalEg}>
+            <Button>Normal Button</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Large button example" code={_buttonLargeEg}>
+            <Button bSize="lg">Large Button</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Small button example" code={_buttonSmallEg}>
+            <Button bSize="sm">Small Button</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Extra Small button example" code={_buttonExtraSmallEg}>
+            <Button bSize="xs">Extra Small Button</Button>
+          </CodeBlocks>
+        </div>
+
+        <div className="component-box component-example">
+          <h3>Block</h3>
+
+          <CodeBlocks title="Block button example" code={_buttonBlockEg}>
+            <Button isBlock>Block Button</Button>
           </CodeBlocks>
         </div>
 
