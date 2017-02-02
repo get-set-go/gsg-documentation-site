@@ -2,74 +2,57 @@ import React from 'react';
 
 import Button from 'gsg-button';
 
+import SubHeader from '../../components/SubHeader';
+import Installation from '../../components/Installation';
+import PropsGrid from '../../components/PropsGrid';
+import EventsGrid from '../../components/EventsGrid';
+import CodeBlocks from '../../components/CodeBlocks';
+
 export default class ButtonPage extends React.Component {
   render() {
+    const _buttonDefaultEg = `<Button>Default Button</Button>`;
+    const _buttonPrimaryEg = `<Button bStyle="primary">Primary Button</Button>`;
+    const _buttonSuccessEg = `<Button bStyle="success">Success Button</Button>`;
+    const _buttonInfoEg = `<Button bStyle="info">Info Button</Button>`;
+    const _buttonWarningEg = `<Button bStyle="warning">Warning Button</Button>`;
+    const _buttonDangerEg = `<Button bStyle="danger">Danger Button</Button>`;
+    
     return (
       <div className="component-page">
 
-        <div className="page-header">
-          <h2>Button component</h2>
-        </div>
+        <SubHeader 
+          componentName="Button"
+          componentRepoUrl="https://github.com/get-set-go/gsg-button"
+          componentPackageName="gsg-button" />
 
-        <div className="component-box component-installation">
-          <h3>Installation</h3>
-
-          <h4 className="pull-left">Using Yarn: </h4>
-          <pre>yarn add https://github.com/get-set-go/gsg-button.git</pre>
-
-          <h4 className="pull-left">Using npm: </h4>
-          <pre>npm install https://github.com/get-set-go/gsg-button.git</pre>
-        </div>
+        <Installation hostedAt="https://github.com/get-set-go/gsg-button.git" />
 
         <div className="component-box component-example">
-          <h3>Syles</h3>
+          <h3>Styles</h3>
 
-          <Button>Button</Button>
-          <Button bStyle="success">Button</Button>
-          <Button bStyle="info">Button</Button>
-          <Button bStyle="warning">Button</Button>
-          <Button bStyle="danger">Button</Button>
+          <CodeBlocks title="Default button example" code={_buttonDefaultEg}>
+            <Button>Default Button</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Primary button example" code={_buttonPrimaryEg}>
+            <Button bStyle="primary">Primary Button</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Success button example" code={_buttonSuccessEg}>
+            <Button bStyle="success">Success Button</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Info button example" code={_buttonInfoEg}>
+            <Button bStyle="info">Info Button</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Warning button example" code={_buttonWarningEg}>
+            <Button bStyle="warning">Warning Button</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Danger button example" code={_buttonDangerEg}>
+            <Button bStyle="danger">Danger Button</Button>
+          </CodeBlocks>
         </div>
-
-        <div className="component-box component-example">
-          <h3>Dismissible</h3>
-
-          <Button>Button</Button>
-        </div>       
         
-        <div className="component-box component-options-table">
-          <h3>Options</h3>
-          
-          <div className="table-responsive">
-            <table className="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Type</th>
-                  <th>Possible Values</th>
-                  <th>Default</th>
-                  <th>Description</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>bStyle</td>
-                  <td>String</td>
-                  <td>success | info | warning | danger</td>
-                  <td>success</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>isDismissible</td>
-                  <td>Boolean</td>
-                  <td>true | false</td>
-                  <td>false</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+        <PropsGrid />
+
+        <EventsGrid />
 
       </div>
     );
