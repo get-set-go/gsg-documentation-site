@@ -19,6 +19,8 @@ export default class ButtonPage extends React.Component {
     const _buttonEg = `<Button bType="button">Button</Button>`;
     const _buttonSubmitEg = `<Button bType="submit">Submit</Button>`;
     const _buttonResetEg = `<Button bType="reset">Reset</Button>`;
+    const _buttonEnabledEg = `<Button isActive>Enabled Button</Button>`;
+    const _buttonDisabledEg = `<Button isDisabled>Disabled Button</Button>`;
 
     return (
       <div className="component-page">
@@ -64,6 +66,17 @@ export default class ButtonPage extends React.Component {
           </CodeBlocks>
           <CodeBlocks title="Reset button example" code={_buttonResetEg}>
             <Button bType="reset">Reset</Button>
+          </CodeBlocks>
+        </div>
+
+        <div className="component-box component-example">
+          <h3>States</h3>
+
+          <CodeBlocks title="Enabled button example" code={_buttonEnabledEg}>
+            <Button isActive>Enabled Button</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Disabled button example" code={_buttonDisabledEg}>
+            <Button isDisabled>Disabled Button</Button>
           </CodeBlocks>
         </div>
         
