@@ -9,6 +9,16 @@ import EventsGrid from '../../components/EventsGrid';
 import CodeBlocks from '../../components/CodeBlocks';
 
 export default class ButtonPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.message = this.message.bind(this);
+  }
+
+  message() {
+    alert('Hello World!');
+  }
+  
   render() {
     const _buttonDefaultEg = `<Button>Default Button</Button>`;
     const _buttonPrimaryEg = `<Button bStyle="primary">Primary Button</Button>`;
@@ -21,6 +31,7 @@ export default class ButtonPage extends React.Component {
     const _buttonResetEg = `<Button bType="reset">Reset</Button>`;
     const _buttonEnabledEg = `<Button isActive>Enabled Button</Button>`;
     const _buttonDisabledEg = `<Button isDisabled>Disabled Button</Button>`;
+    const _buttonClickEg = `<Button onClick={this.message}>Click Button</Button>`;
 
     return (
       <div className="component-page">
@@ -80,6 +91,14 @@ export default class ButtonPage extends React.Component {
           </CodeBlocks>
         </div>
         
+        <div className="component-box component-example">
+          <h3>Events</h3>
+
+          <CodeBlocks title="Click button example" code={_buttonClickEg}>
+            <Button onClick={this.message}>Click Button</Button>
+          </CodeBlocks>
+        </div>
+
         <PropsGrid />
 
         <EventsGrid />
