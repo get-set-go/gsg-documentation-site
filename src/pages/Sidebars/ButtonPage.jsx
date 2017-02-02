@@ -16,7 +16,10 @@ export default class ButtonPage extends React.Component {
     const _buttonInfoEg = `<Button bStyle="info">Info Button</Button>`;
     const _buttonWarningEg = `<Button bStyle="warning">Warning Button</Button>`;
     const _buttonDangerEg = `<Button bStyle="danger">Danger Button</Button>`;
-    
+    const _buttonEg = `<Button bType="button">Button</Button>`;
+    const _buttonSubmitEg = `<Button bType="submit">Submit</Button>`;
+    const _buttonResetEg = `<Button bType="reset">Reset</Button>`;
+
     return (
       <div className="component-page">
 
@@ -47,6 +50,20 @@ export default class ButtonPage extends React.Component {
           </CodeBlocks>
           <CodeBlocks title="Danger button example" code={_buttonDangerEg}>
             <Button bStyle="danger">Danger Button</Button>
+          </CodeBlocks>
+        </div>
+
+        <div className="component-box component-example">
+          <h3>Types</h3>
+
+          <CodeBlocks title="Button button example" code={_buttonEg}>
+            <Button bType="button">Button</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Submit button example" code={_buttonSubmitEg}>
+            <Button bType="submit">Submit</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Reset button example" code={_buttonResetEg}>
+            <Button bType="reset">Reset</Button>
           </CodeBlocks>
         </div>
         
