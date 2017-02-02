@@ -12,8 +12,6 @@ export default class About extends React.Component {
           <h3>Meet the Get-Set-Go project developer and maintainer</h3>
         </div>
 
-        <hr/>
-
         <div className="about-box developer-section">
           <h3>Core developer and maintainer</h3>
           <div className="media">

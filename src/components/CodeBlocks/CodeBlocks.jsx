@@ -8,7 +8,9 @@ export default class CodeBlocks extends React.Component {
       <div className="component-codeblocks">
         <h4>{this.props.title}</h4>
         
-        {this.props.children}
+        <div className="code-preview">
+          {this.props.children}
+        </div>
         <pre>
           {this.props.code}
         </pre>
