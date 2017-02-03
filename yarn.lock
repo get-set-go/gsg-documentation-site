@@ -2200,8 +2200,8 @@ growly@^1.2.0:
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
 
 "gsg-alert@https://github.com/get-set-go/gsg-alert.git":
-  version "0.0.5"
-  resolved "https://github.com/get-set-go/gsg-alert.git#617aad10438359224a8ae27b01865efd627dfe0b"
+  version "0.0.6"
+  resolved "https://github.com/get-set-go/gsg-alert.git#d23ace905951462ab6e1a4b72f4b9b8e17c0273a"
   dependencies:
     classnames "^2.2.5"
     gsg-common-style "git+https://github.com/get-set-go/gsg-common-style.git"
@@ -2210,8 +2210,8 @@ growly@^1.2.0:
     react-dom "^15.4.1"
 
 "gsg-badge@https://github.com/get-set-go/gsg-badge.git":
-  version "0.0.7"
-  resolved "https://github.com/get-set-go/gsg-badge.git#2636a3f3ea7620d42851190eda7ee66c5a7dc11d"
+  version "0.0.8"
+  resolved "https://github.com/get-set-go/gsg-badge.git#d1e03b8dbd387176059f66d790a54d10cd8141eb"
   dependencies:
     classnames "^2.2.5"
     gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
@@ -2220,8 +2220,8 @@ growly@^1.2.0:
     react-dom "^15.4.1"
 
 "gsg-blockquote@https://github.com/get-set-go/gsg-blockquote.git":
-  version "0.0.2"
-  resolved "https://github.com/get-set-go/gsg-blockquote.git#315f1c6401bafcc270193e8aed66b2ab184f2f97"
+  version "0.0.3"
+  resolved "https://github.com/get-set-go/gsg-blockquote.git#d6da93244aeb210b9cd159afbaa654f2155d3b7f"
   dependencies:
     classnames "^2.2.5"
     gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
@@ -2230,8 +2230,8 @@ growly@^1.2.0:
     react-dom "^15.4.1"
 
 "gsg-button@https://github.com/get-set-go/gsg-button.git":
-  version "0.1.2"
-  resolved "https://github.com/get-set-go/gsg-button.git#6f5334e75f979f50e793af44b2cf78219d2d4636"
+  version "0.1.4"
+  resolved "https://github.com/get-set-go/gsg-button.git#3741d28476b6e7cfeec11fdc968427b4292834c6"
   dependencies:
     classnames "^2.2.5"
     gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
@@ -2244,8 +2244,8 @@ growly@^1.2.0:
   resolved "git+https://github.com/get-set-go/gsg-common-style.git#6e66386c06b0c8f4342b7d318b3ec5c304b892db"
 
 "gsg-label@https://github.com/get-set-go/gsg-label.git":
-  version "0.0.5"
-  resolved "https://github.com/get-set-go/gsg-label.git#6da7313e78a51c9a6bcb59696e3c112a2b0d4070"
+  version "0.0.6"
+  resolved "https://github.com/get-set-go/gsg-label.git#4e19eef948296cfabb37c0ac51e5636e051af7d5"
   dependencies:
     classnames "^2.2.5"
     gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
@@ -2254,8 +2254,8 @@ growly@^1.2.0:
     react-dom "^15.4.1"
 
 "gsg-loader@https://github.com/get-set-go/gsg-loader.git":
-  version "0.0.2"
-  resolved "https://github.com/get-set-go/gsg-loader.git#383f1666ab71d27f35fd732d2f8750fd402e7c17"
+  version "0.0.3"
+  resolved "https://github.com/get-set-go/gsg-loader.git#c6a1285eb84ad95436d91c9555943c18c425cc7b"
   dependencies:
     classnames "^2.2.5"
     gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
@@ -2264,8 +2264,8 @@ growly@^1.2.0:
     react-dom "^15.4.1"
 
 "gsg-panel@https://github.com/get-set-go/gsg-panel.git":
-  version "0.0.7"
-  resolved "https://github.com/get-set-go/gsg-panel.git#2c031653c69956047398ed8ffe165b9513f4dba9"
+  version "0.0.8"
+  resolved "https://github.com/get-set-go/gsg-panel.git#79a6f8e19c6441f36d16838e93553febb85c895b"
   dependencies:
     classnames "^2.2.5"
     gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
@@ -2274,8 +2274,8 @@ growly@^1.2.0:
     react-dom "^15.4.1"
 
 "gsg-thumbnail@https://github.com/get-set-go/gsg-thumbnail.git":
-  version "0.0.2"
-  resolved "https://github.com/get-set-go/gsg-thumbnail.git#e8d7f26164eefdb00b0063fa3717eab8ec12aff7"
+  version "0.0.3"
+  resolved "https://github.com/get-set-go/gsg-thumbnail.git#d7f4666bee39e279f6709f1b90ef3a4a3b46f7a9"
   dependencies:
     classnames "^2.2.5"
     gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
