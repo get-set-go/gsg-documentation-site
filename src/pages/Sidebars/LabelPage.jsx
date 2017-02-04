@@ -11,6 +11,11 @@ import CodeBlocks from '../../components/CodeBlocks';
 export default class LabelPage extends React.Component {
   render() {
     const _labelDefaultEg = `<Label>Default Label</Label>`;
+    const _labelPrimaryEg = `<Label bStyle="primary">Primary Label</Label>`;
+    const _labelSuccessEg = `<Label bStyle="success">Success Label</Label>`;
+    const _labelInfoEg = `<Label bStyle="info">Info Label</Label>`;
+    const _labelWarningEg = `<Label bStyle="warning">Warning Label</Label>`;
+    const _labelDangerEg = `<Label bStyle="danger">Danger Label</Label>`;
 
     return (
       <div className="component-page">
@@ -25,8 +30,23 @@ export default class LabelPage extends React.Component {
         <div className="component-box component-example">
           <h3>Styles</h3>
 
-          <CodeBlocks title="Label example" code={_labelDefaultEg}>
+          <CodeBlocks title="Default label example" code={_labelDefaultEg}>
             <Label>Default Label</Label>
+          </CodeBlocks>
+          <CodeBlocks title="Primary label example" code={_labelPrimaryEg}>
+            <Label bStyle="primary">Primary Label</Label>
+          </CodeBlocks>
+          <CodeBlocks title="Success label example" code={_labelSuccessEg}>
+            <Label bStyle="success">Success Label</Label>
+          </CodeBlocks>
+          <CodeBlocks title="Info label example" code={_labelInfoEg}>
+            <Label bStyle="info">Info Label</Label>
+          </CodeBlocks>
+          <CodeBlocks title="Warning label example" code={_labelWarningEg}>
+            <Label bStyle="warning">Warning Label</Label>
+          </CodeBlocks>
+          <CodeBlocks title="Danger label example" code={_labelDangerEg}>
+            <Label bStyle="danger">Danger Label</Label>
           </CodeBlocks>
         </div>
         
