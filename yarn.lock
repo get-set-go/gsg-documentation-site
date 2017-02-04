@@ -2243,6 +2243,27 @@ growly@^1.2.0:
   version "0.0.7"
   resolved "git+https://github.com/get-set-go/gsg-common-style.git#6e66386c06b0c8f4342b7d318b3ec5c304b892db"
 
+"gsg-fullscreen@https://github.com/get-set-go/gsg-full-screen.git":
+  version "0.0.2"
+  resolved "https://github.com/get-set-go/gsg-full-screen.git#8a87d71f006443b48ee10083b0c8e5d3fc11bdec"
+  dependencies:
+    classnames "^2.2.5"
+    font-awesome "^4.7.0"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
+"gsg-jumbotron@https://github.com/get-set-go/gsg-jumbotron.git":
+  version "0.0.3"
+  resolved "https://github.com/get-set-go/gsg-jumbotron.git#0565bd059b9ae386703fdffa7c2501dd6a3d00bf"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
 "gsg-label@https://github.com/get-set-go/gsg-label.git":
   version "0.0.6"
   resolved "https://github.com/get-set-go/gsg-label.git#4e19eef948296cfabb37c0ac51e5636e051af7d5"
@@ -2266,6 +2287,16 @@ growly@^1.2.0:
 "gsg-panel@https://github.com/get-set-go/gsg-panel.git":
   version "0.0.8"
   resolved "https://github.com/get-set-go/gsg-panel.git#79a6f8e19c6441f36d16838e93553febb85c895b"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
+"gsg-progress-bar@https://github.com/get-set-go/gsg-progress-bar.git":
+  version "0.0.7"
+  resolved "https://github.com/get-set-go/gsg-progress-bar.git#f14454e850d160863b1e12bf89f2da11b31edb58"
   dependencies:
     classnames "^2.2.5"
     gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
