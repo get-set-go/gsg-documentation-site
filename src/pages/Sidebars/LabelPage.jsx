@@ -2,7 +2,7 @@ import React from 'react';
 
 import Label from 'gsg-label';
 
-import SubHeader from '../../components/SubHeader';
+import GithubStatus from '../../components/GithubStatus';
 import Installation from '../../components/Installation';
 import PropsGrid from '../../components/PropsGrid';
 import EventsGrid from '../../components/EventsGrid';
@@ -20,7 +20,7 @@ export default class LabelPage extends React.Component {
     return (
       <div className="component-page">
 
-        <SubHeader 
+        <GithubStatus 
           componentName="Label"
           componentRepoUrl="https://github.com/get-set-go/gsg-label"
           componentPackageName="gsg-label" />
@@ -49,7 +49,7 @@ export default class LabelPage extends React.Component {
             <Label bStyle="danger">Danger Label</Label>
           </CodeBlocks>
         </div>
-        
+
         <PropsGrid />
 
         <EventsGrid />

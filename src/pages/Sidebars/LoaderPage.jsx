@@ -2,7 +2,7 @@ import React from 'react';
 
 import Loader from 'gsg-loader';
 
-import SubHeader from '../../components/SubHeader';
+import GithubStatus from '../../components/GithubStatus';
 import Installation from '../../components/Installation';
 import PropsGrid from '../../components/PropsGrid';
 import EventsGrid from '../../components/EventsGrid';
@@ -15,7 +15,7 @@ export default class LoaderPage extends React.Component {
     return (
       <div className="component-page">
 
-        <SubHeader 
+        <GithubStatus 
           componentName="Loader"
           componentRepoUrl="https://github.com/get-set-go/gsg-loader"
           componentPackageName="gsg-loader" />
@@ -29,7 +29,7 @@ export default class LoaderPage extends React.Component {
             <Loader/>
           </CodeBlocks>
         </div>
-        
+
         <PropsGrid />
 
         <EventsGrid />

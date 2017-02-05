@@ -2,7 +2,7 @@ import React from 'react';
 
 import Jumbotron from 'gsg-jumbotron';
 
-import SubHeader from '../../components/SubHeader';
+import GithubStatus from '../../components/GithubStatus';
 import Installation from '../../components/Installation';
 import CodeBlocks from '../../components/CodeBlocks';
 
@@ -23,7 +23,7 @@ export default class JumbotronPage extends React.Component {
     return (
       <div className="component-page">
 
-        <SubHeader
+        <GithubStatus
           componentName="Jumbotron"
           componentRepoUrl="https://github.com/get-set-go/gsg-jumbotron"
           componentPackageName="gsg-jumbotron" />
