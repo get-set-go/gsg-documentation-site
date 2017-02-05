@@ -4,8 +4,6 @@ import Jumbotron from 'gsg-jumbotron';
 
 import SubHeader from '../../components/SubHeader';
 import Installation from '../../components/Installation';
-import PropsGrid from '../../components/PropsGrid';
-import EventsGrid from '../../components/EventsGrid';
 import CodeBlocks from '../../components/CodeBlocks';
 
 export default class JumbotronPage extends React.Component {
@@ -25,7 +23,7 @@ export default class JumbotronPage extends React.Component {
     return (
       <div className="component-page">
 
-        <SubHeader 
+        <SubHeader
           componentName="Jumbotron"
           componentRepoUrl="https://github.com/get-set-go/gsg-jumbotron"
           componentPackageName="gsg-jumbotron" />
@@ -33,16 +31,10 @@ export default class JumbotronPage extends React.Component {
         <Installation hostedAt="https://github.com/get-set-go/gsg-jumbotron.git" />
 
         <div className="component-box component-example">
-          <h3>Styles</h3>
-
-          <CodeBlocks title="Jumbotron example" code={_jumbotronEg}>
+          <CodeBlocks title="Example - Jumbotron" code={_jumbotronEg}>
             <Jumbotron>{_content}</Jumbotron>
-          </CodeBlocks>       
+          </CodeBlocks>
         </div>
-        
-        <PropsGrid />
-
-        <EventsGrid />
 
       </div>
     );
