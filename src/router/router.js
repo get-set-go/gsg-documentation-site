@@ -7,7 +7,7 @@ const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });
 import App from '../app.js';
 
 import HomePage from '../pages/Home';
-import GettingStartedPage from '../pages/GettingStarted';
+import HelpPage from '../pages/Help';
 import ComponentsPage from '../pages/Components';
 import ExpoPage from '../pages/Expo';
 import AboutPage from '../pages/About';
@@ -32,7 +32,7 @@ const Routes = (
     <Route path = "/" component = {App}>
       <IndexRoute component = {HomePage} />
       <Route path = "home" component = {HomePage} />
-      <Route path = "started" component = {GettingStartedPage} />
+      <Route path = "help" component = {HelpPage} />
       <Route path = "expo" component = {ExpoPage} />
       <Route path = "about" component = {AboutPage} />
       <Route path = "customize" component = {CustomizePage} />
