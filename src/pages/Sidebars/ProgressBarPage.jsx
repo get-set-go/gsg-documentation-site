@@ -2,7 +2,7 @@ import React from 'react';
 
 import ProgressBar from 'gsg-progress-bar';
 
-import SubHeader from '../../components/SubHeader';
+import GithubStatus from '../../components/GithubStatus';
 import Installation from '../../components/Installation';
 import PropsGrid from '../../components/PropsGrid';
 import EventsGrid from '../../components/EventsGrid';
@@ -29,7 +29,7 @@ export default class ProgressBarPage extends React.Component {
     return (
       <div className="component-page">
 
-        <SubHeader 
+        <GithubStatus 
           componentName="ProgressBar"
           componentRepoUrl="https://github.com/get-set-go/gsg-progress-bar"
           componentPackageName="gsg-progress-bar" />
@@ -75,15 +75,15 @@ export default class ProgressBarPage extends React.Component {
 
         <div className="component-box component-example">
           <h3>State</h3>
-          
+
           <CodeBlocks title="Progress-bar striped with non-active state example" code={_progressBarStripedEg}>
             <ProgressBar isStriped="true" bProgress="40"></ProgressBar>
-          </CodeBlocks>          
+          </CodeBlocks>
           <CodeBlocks title="Progress-bar active state example" code={_progressBarActiveEg}>
             <ProgressBar isStriped="true" isActive="true" bProgress="40"></ProgressBar>
           </CodeBlocks>
         </div>
-        
+
         <PropsGrid />
 
         <EventsGrid />

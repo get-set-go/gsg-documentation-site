@@ -2,7 +2,7 @@ import React from 'react';
 
 import Button from 'gsg-button';
 
-import SubHeader from '../../components/SubHeader';
+import GithubStatus from '../../components/GithubStatus';
 import Installation from '../../components/Installation';
 import PropsGrid from '../../components/PropsGrid';
 import EventsGrid from '../../components/EventsGrid';
@@ -18,7 +18,7 @@ export default class ButtonPage extends React.Component {
   message() {
     alert('Hello World!');
   }
-  
+
   render() {
     const _buttonDefaultEg = `<Button>Default Button</Button>`;
     const _buttonPrimaryEg = `<Button bStyle="primary">Primary Button</Button>`;
@@ -41,7 +41,7 @@ export default class ButtonPage extends React.Component {
     return (
       <div className="component-page">
 
-        <SubHeader 
+        <GithubStatus 
           componentName="Button"
           componentRepoUrl="https://github.com/get-set-go/gsg-button"
           componentPackageName="gsg-button" />
@@ -95,7 +95,7 @@ export default class ButtonPage extends React.Component {
             <Button isDisabled>Disabled Button</Button>
           </CodeBlocks>
         </div>
-        
+
         <div className="component-box component-example">
           <h3>Events</h3>
 

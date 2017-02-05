@@ -2,7 +2,7 @@ import React from 'react';
 
 import Blockquote from 'gsg-blockquote';
 
-import SubHeader from '../../components/SubHeader';
+import GithubStatus from '../../components/GithubStatus';
 import Installation from '../../components/Installation';
 import PropsGrid from '../../components/PropsGrid';
 import EventsGrid from '../../components/EventsGrid';
@@ -25,7 +25,7 @@ export default class BlockquotePage extends React.Component {
     return (
       <div className="component-page">
 
-        <SubHeader 
+        <GithubStatus 
           componentName="Blockquote"
           componentRepoUrl="https://github.com/get-set-go/gsg-blockquote"
           componentPackageName="gsg-blockquote" />
@@ -41,9 +41,9 @@ export default class BlockquotePage extends React.Component {
 
           <CodeBlocks title="Blockquote in reverse example" code={_blockquoteEg}>
             <Blockquote isReverse>{_content}</Blockquote>
-          </CodeBlocks>          
+          </CodeBlocks>
         </div>
-        
+
         <PropsGrid />
 
         <EventsGrid />

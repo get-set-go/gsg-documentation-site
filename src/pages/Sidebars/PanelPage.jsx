@@ -2,7 +2,7 @@ import React from 'react';
 
 import Panel from 'gsg-panel';
 
-import SubHeader from '../../components/SubHeader';
+import GithubStatus from '../../components/GithubStatus';
 import Installation from '../../components/Installation';
 import PropsGrid from '../../components/PropsGrid';
 import EventsGrid from '../../components/EventsGrid';
@@ -24,7 +24,7 @@ export default class PanelPage extends React.Component {
     return (
       <div className="component-page">
 
-        <SubHeader 
+        <GithubStatus 
           componentName="Panel"
           componentRepoUrl="https://github.com/get-set-go/gsg-panel"
           componentPackageName="gsg-panel" />
@@ -61,7 +61,7 @@ export default class PanelPage extends React.Component {
             <Panel header={_header} footer={_footer}>My name is Ashwin</Panel>
           </CodeBlocks>
         </div>
-        
+
         <PropsGrid />
 
         <EventsGrid />

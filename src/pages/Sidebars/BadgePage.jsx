@@ -2,7 +2,7 @@ import React from 'react';
 
 import Badge from 'gsg-badge';
 
-import SubHeader from '../../components/SubHeader';
+import GithubStatus from '../../components/GithubStatus';
 import Installation from '../../components/Installation';
 import PropsGrid from '../../components/PropsGrid';
 import EventsGrid from '../../components/EventsGrid';
@@ -15,7 +15,7 @@ export default class BadgePage extends React.Component {
     return (
       <div className="component-page">
 
-        <SubHeader 
+        <GithubStatus 
           componentName="Badge"
           componentRepoUrl="https://github.com/get-set-go/gsg-badge"
           componentPackageName="gsg-badge" />
@@ -29,7 +29,7 @@ export default class BadgePage extends React.Component {
             <Badge>45</Badge>
           </CodeBlocks>
         </div>
-        
+
         <PropsGrid />
 
         <EventsGrid />

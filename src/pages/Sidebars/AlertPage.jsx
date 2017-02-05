@@ -2,7 +2,7 @@ import React from 'react';
 
 import Alert from 'gsg-alert';
 
-import SubHeader from '../../components/SubHeader';
+import GithubStatus from '../../components/GithubStatus';
 import Installation from '../../components/Installation';
 import PropsGrid from '../../components/PropsGrid';
 import EventsGrid from '../../components/EventsGrid';
@@ -19,7 +19,7 @@ export default class AlertPage extends React.Component {
     return (
       <div className="component-page">
 
-        <SubHeader 
+        <GithubStatus 
           componentName="Alert"
           componentRepoUrl="https://github.com/get-set-go/gsg-alert"
           componentPackageName="gsg-alert" />
@@ -50,7 +50,7 @@ export default class AlertPage extends React.Component {
             <Alert isDismissible><strong>Well done!</strong> You successfully read this important alert message (Dismissible Alert).</Alert>
           </CodeBlocks>
         </div>
-        
+
         <PropsGrid />
 
         <EventsGrid />
