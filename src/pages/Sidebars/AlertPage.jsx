@@ -16,6 +16,34 @@ export default class AlertPage extends React.Component {
     const _alertDangerEg = `<Alert bStyle="danger"><strong>Oh snap!</strong> Change a few things up and try submitting again.</Alert>`;
     const _alertDismissEg = `<Alert isDismissible><strong>Well done!</strong> You successfully read this important alert message (Dismissible Alert).</Alert>`;
 
+    const _componentProps = [{
+      "name": "bStyle",
+      "type": "String",
+      "possibleval": "primary | success | info | warning | danger",
+      "default": "primary",
+      "description": ""
+    }, {
+      "name": "isDismissible",
+      "type": "Boolean",
+      "possibleval": "true | false",
+      "default": "false",
+      "description": ""
+    }];
+
+    const _componentEvents = [{
+      "name": "open",
+      "description": ""
+    }, {
+      "name": "opened",
+      "description": ""
+    }, {
+      "name": "close",
+      "description": ""
+    }, {
+      "name": "closed",
+      "description": ""
+    }];
+
     return (
       <div className="component-page">
 
@@ -47,9 +75,9 @@ export default class AlertPage extends React.Component {
           </CodeBlocks>
         </div>
 
-        <PropsGrid />
+        <PropsGrid options={_componentProps}/>
 
-        <EventsGrid />
+        <EventsGrid events={_componentEvents}/>
 
       </div>
     );
