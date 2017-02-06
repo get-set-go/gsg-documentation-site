@@ -4,10 +4,23 @@ import React from 'react';
 
 export default class PropsGrid extends React.Component {
   render() {
+
+    const _propertyGrid = this.props.options.map((property) => {
+      return (
+        <tr>
+          <td>{property.name}</td>
+          <td>{property.type}</td>
+          <td>{property.possibleval}</td>
+          <td>{property.default}</td>
+          <td>{property.description}</td>
+        </tr>
+      );
+    });
+
     return (
       <div className="component-propsgrid">
         <h3>Properties</h3>
-        
+
         <div className="table-responsive">
           <table className="table table-bordered">
             <thead>
@@ -20,13 +33,7 @@ export default class PropsGrid extends React.Component {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>bStyle</td>
-                <td>String</td>
-                <td>success | info | warning | danger</td>
-                <td>success</td>
-                <td></td>
-              </tr>
+              {_propertyGrid}
             </tbody>
           </table>
         </div>
