@@ -11,21 +11,26 @@ import CodeBlocks from '../../components/CodeBlocks';
 export default class BlockquotePage extends React.Component {
   render() {
     const _blockquoteEg = `<Blockquote>
-  <p>WWF has been protecting the future of nature.</p>
-  <footer><cite>World Wild Life</cite></footer>
+  <p>The true sign of intelligence is not knowledge but imagination.</p>
+  <footer><cite>Albert Einstein</cite></footer>
+</Blockquote>`;
+
+    const _blockquoteReverseEg = `<Blockquote isReverse>
+  <p>The true sign of intelligence is not knowledge but imagination.</p>
+  <footer><cite>Albert Einstein</cite></footer>
 </Blockquote>`;
 
     const _content = (
       <div>
-        <p>WWF has been protecting the future of nature.</p>
-        <footer><cite>World Wild Life</cite></footer>
+        <p>The true sign of intelligence is not knowledge but imagination.</p>
+        <footer><cite>Albert Einstein</cite></footer>
       </div>
     );
 
     return (
       <div className="component-page">
 
-        <GithubStatus 
+        <GithubStatus
           componentName="Blockquote"
           componentRepoUrl="https://github.com/get-set-go/gsg-blockquote"
           componentPackageName="gsg-blockquote" />
@@ -33,20 +38,14 @@ export default class BlockquotePage extends React.Component {
         <Installation hostedAt="https://github.com/get-set-go/gsg-blockquote.git" />
 
         <div className="component-box component-example">
-          <h3>Styles</h3>
-
-          <CodeBlocks title="Blockquote example" code={_blockquoteEg}>
+          <CodeBlocks title="Example - Blockquote" code={_blockquoteEg}>
             <Blockquote>{_content}</Blockquote>
           </CodeBlocks>
 
-          <CodeBlocks title="Blockquote in reverse example" code={_blockquoteEg}>
+          <CodeBlocks title="Example - Reverse Blockquote" code={_blockquoteReverseEg}>
             <Blockquote isReverse>{_content}</Blockquote>
           </CodeBlocks>
         </div>
-
-        <PropsGrid />
-
-        <EventsGrid />
 
       </div>
     );
