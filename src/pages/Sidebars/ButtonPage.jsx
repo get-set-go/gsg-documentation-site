@@ -16,7 +16,7 @@ export default class ButtonPage extends React.Component {
   }
 
   message() {
-    alert('Hello World!');
+    alert('Hello World! Thank you for using Get-Set-Go components.');
   }
 
   render() {
@@ -38,10 +38,48 @@ export default class ButtonPage extends React.Component {
     const _buttonExtraSmallEg = `<Button bSize="xs">Extra Small Button</Button>`;
     const _buttonBlockEg = `<Button isBlock>Block Button</Button>`;
 
+    const _componentProps = [{
+      "name": "bStyle",
+      "type": "String",
+      "possibleval": "default | primary | success | info | warning | danger",
+      "default": "default",
+      "description": ""
+    }, {
+      "name": "bType",
+      "type": "String",
+      "possibleval": "button | submit | reset",
+      "default": "button",
+      "description": ""
+    }, {
+      "name": "isActive",
+      "type": "Boolean",
+      "possibleval": "true | false",
+      "default": "false",
+      "description": ""
+    }, {
+      "name": "isDisabled",
+      "type": "Boolean",
+      "possibleval": "true | false",
+      "default": "false",
+      "description": ""
+    }, {
+      "name": "bSize",
+      "type": "String",
+      "possibleval": "lg | sm | xs",
+      "default": "",
+      "description": ""
+    }, {
+      "name": "isBlock",
+      "type": "Boolean",
+      "possibleval": "true | false",
+      "default": "false",
+      "description": ""
+    }];
+
     return (
       <div className="component-page">
 
-        <GithubStatus 
+        <GithubStatus
           componentName="Button"
           componentRepoUrl="https://github.com/get-set-go/gsg-button"
           componentPackageName="gsg-button" />
@@ -49,90 +87,75 @@ export default class ButtonPage extends React.Component {
         <Installation hostedAt="https://github.com/get-set-go/gsg-button.git" />
 
         <div className="component-box component-example">
-          <h3>Styles</h3>
-
-          <CodeBlocks title="Default button example" code={_buttonDefaultEg}>
-            <Button>Default Button</Button>
+          <CodeBlocks  title="Example - Default Button" code={_buttonDefaultEg}>
+            <Button>Default</Button>
           </CodeBlocks>
-          <CodeBlocks title="Primary button example" code={_buttonPrimaryEg}>
-            <Button bStyle="primary">Primary Button</Button>
+          <CodeBlocks  title="Example - Primary Button" code={_buttonPrimaryEg}>
+            <Button bStyle="primary">Primary</Button>
           </CodeBlocks>
-          <CodeBlocks title="Success button example" code={_buttonSuccessEg}>
-            <Button bStyle="success">Success Button</Button>
+          <CodeBlocks  title="Example - Success Button" code={_buttonSuccessEg}>
+            <Button bStyle="success">Success</Button>
           </CodeBlocks>
-          <CodeBlocks title="Info button example" code={_buttonInfoEg}>
-            <Button bStyle="info">Info Button</Button>
+          <CodeBlocks  title="Example - Info Button" code={_buttonInfoEg}>
+            <Button bStyle="info">Info</Button>
           </CodeBlocks>
-          <CodeBlocks title="Warning button example" code={_buttonWarningEg}>
-            <Button bStyle="warning">Warning Button</Button>
+          <CodeBlocks  title="Example - Warning Button" code={_buttonWarningEg}>
+            <Button bStyle="warning">Warning</Button>
           </CodeBlocks>
-          <CodeBlocks title="Danger button example" code={_buttonDangerEg}>
-            <Button bStyle="danger">Danger Button</Button>
+          <CodeBlocks  title="Example - Danger Button" code={_buttonDangerEg}>
+            <Button bStyle="danger">Danger</Button>
           </CodeBlocks>
         </div>
 
         <div className="component-box component-example">
-          <h3>Types</h3>
-
-          <CodeBlocks title="Button button example" code={_buttonEg}>
+          <CodeBlocks title="Example - Button" code={_buttonEg}>
             <Button bType="button">Button</Button>
           </CodeBlocks>
-          <CodeBlocks title="Submit button example" code={_buttonSubmitEg}>
+          <CodeBlocks title="Example - Submit" code={_buttonSubmitEg}>
             <Button bType="submit">Submit</Button>
           </CodeBlocks>
-          <CodeBlocks title="Reset button example" code={_buttonResetEg}>
+          <CodeBlocks title="Example - Reset" code={_buttonResetEg}>
             <Button bType="reset">Reset</Button>
           </CodeBlocks>
         </div>
 
         <div className="component-box component-example">
-          <h3>States</h3>
-
-          <CodeBlocks title="Enabled button example" code={_buttonEnabledEg}>
-            <Button isActive>Enabled Button</Button>
+          <CodeBlocks title="Example - Enabled Button" code={_buttonEnabledEg}>
+            <Button isActive>Enabled</Button>
           </CodeBlocks>
-          <CodeBlocks title="Disabled button example" code={_buttonDisabledEg}>
-            <Button isDisabled>Disabled Button</Button>
+          <CodeBlocks title="Example - Disabled Button" code={_buttonDisabledEg}>
+            <Button isDisabled>Disabled</Button>
           </CodeBlocks>
         </div>
 
         <div className="component-box component-example">
-          <h3>Events</h3>
-
-          <CodeBlocks title="Click button example" code={_buttonClickEg}>
-            <Button onClick={this.message}>Click Button</Button>
+          <CodeBlocks title="Example - Normal Button" code={_buttonNormalEg}>
+            <Button>Normal</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Example - Large Button" code={_buttonLargeEg}>
+            <Button bSize="lg">Large</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Example - Small Button" code={_buttonSmallEg}>
+            <Button bSize="sm">Small</Button>
+          </CodeBlocks>
+          <CodeBlocks title="Example - Extra Small Button" code={_buttonExtraSmallEg}>
+            <Button bSize="xs">Extra Small</Button>
           </CodeBlocks>
         </div>
 
         <div className="component-box component-example">
-          <h3>Sizes</h3>
-
-          <CodeBlocks title="Normal button example" code={_buttonNormalEg}>
-            <Button>Normal Button</Button>
-          </CodeBlocks>
-          <CodeBlocks title="Large button example" code={_buttonLargeEg}>
-            <Button bSize="lg">Large Button</Button>
-          </CodeBlocks>
-          <CodeBlocks title="Small button example" code={_buttonSmallEg}>
-            <Button bSize="sm">Small Button</Button>
-          </CodeBlocks>
-          <CodeBlocks title="Extra Small button example" code={_buttonExtraSmallEg}>
-            <Button bSize="xs">Extra Small Button</Button>
+          <CodeBlocks title="Example - Block Button" code={_buttonBlockEg}>
+            <Button isBlock>Block</Button>
           </CodeBlocks>
         </div>
 
         <div className="component-box component-example">
-          <h3>Block</h3>
-
-          <CodeBlocks title="Block button example" code={_buttonBlockEg}>
-            <Button isBlock>Block Button</Button>
+          <CodeBlocks title="Example - Click Button" code={_buttonClickEg}>
+            <Button onClick={this.message}>Click</Button>
           </CodeBlocks>
         </div>
 
-        <PropsGrid />
-
-        <EventsGrid />
-
+        <PropsGrid options={_componentProps}/>
       </div>
     );
   }
