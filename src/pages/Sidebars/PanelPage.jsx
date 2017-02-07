@@ -5,7 +5,6 @@ import Panel from 'gsg-panel';
 import GithubStatus from '../../components/GithubStatus';
 import Installation from '../../components/Installation';
 import PropsGrid from '../../components/PropsGrid';
-import EventsGrid from '../../components/EventsGrid';
 import CodeBlocks from '../../components/CodeBlocks';
 
 export default class PanelPage extends React.Component {
@@ -21,10 +20,30 @@ export default class PanelPage extends React.Component {
     const _header = "Hello World!";
     const _footer = "Thank you for supporting Get-Set-Go project";
 
+    const _componentProps = [{
+      "name": "bStyle",
+      "type": "String",
+      "possibleval": "default | primary | success | info | warning | danger",
+      "default": "default",
+      "description": ""
+    }, {
+      "name": "header",
+      "type": "String",
+      "possibleval": "",
+      "default": "",
+      "description": ""
+    }, {
+      "name": "footer",
+      "type": "String",
+      "possibleval": "",
+      "default": "",
+      "description": ""
+    }];
+
     return (
       <div className="component-page">
 
-        <GithubStatus 
+        <GithubStatus
           componentName="Panel"
           componentRepoUrl="https://github.com/get-set-go/gsg-panel"
           componentPackageName="gsg-panel" />
@@ -32,40 +51,33 @@ export default class PanelPage extends React.Component {
         <Installation hostedAt="https://github.com/get-set-go/gsg-panel.git" />
 
         <div className="component-box component-example">
-          <h3>Styles</h3>
-
-          <CodeBlocks title="Default panel example" code={_panelDefaultEg}>
+          <CodeBlocks title="Example - Default Panel" code={_panelDefaultEg}>
             <Panel header={_header}>My name is Ashwin</Panel>
           </CodeBlocks>
-          <CodeBlocks title="Primary panel example" code={_panelPrimaryEg}>
+          <CodeBlocks title="Example - Primary Panel" code={_panelPrimaryEg}>
             <Panel bStyle="primary" header={_header}>My name is Ashwin</Panel>
           </CodeBlocks>
-          <CodeBlocks title="Success panel example" code={_panelSuccessEg}>
+          <CodeBlocks title="Example - Success Panel" code={_panelSuccessEg}>
             <Panel bStyle="success" header={_header}>My name is Ashwin</Panel>
           </CodeBlocks>
-          <CodeBlocks title="Info panel example" code={_panelInfoEg}>
+          <CodeBlocks title="Example - Info Panel" code={_panelInfoEg}>
             <Panel bStyle="info" header={_header}>My name is Ashwin</Panel>
           </CodeBlocks>
-          <CodeBlocks title="Warning panel example" code={_panelWarningEg}>
+          <CodeBlocks title="Example - Warning Panel" code={_panelWarningEg}>
             <Panel bStyle="warning" header={_header}>My name is Ashwin</Panel>
           </CodeBlocks>
-          <CodeBlocks title="Danger panel example" code={_panelDangerEg}>
+          <CodeBlocks title="Example - Danger Panel" code={_panelDangerEg}>
             <Panel bStyle="danger" header={_header}>My name is Ashwin</Panel>
           </CodeBlocks>
         </div>
 
         <div className="component-box component-example">
-          <h3>Styles</h3>
-
-          <CodeBlocks title="Panel example with header and footer" code={_panelWithFooterEg}>
+          <CodeBlocks title="Example - Panel with header and footer" code={_panelWithFooterEg}>
             <Panel header={_header} footer={_footer}>My name is Ashwin</Panel>
           </CodeBlocks>
         </div>
 
-        <PropsGrid />
-
-        <EventsGrid />
-
+        <PropsGrid options={_componentProps}/>
       </div>
     );
   }
