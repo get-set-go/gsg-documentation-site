@@ -5,7 +5,6 @@ import Blockquote from 'gsg-blockquote';
 import GithubStatus from '../../components/GithubStatus';
 import Installation from '../../components/Installation';
 import PropsGrid from '../../components/PropsGrid';
-import EventsGrid from '../../components/EventsGrid';
 import CodeBlocks from '../../components/CodeBlocks';
 
 export default class BlockquotePage extends React.Component {
@@ -27,6 +26,14 @@ export default class BlockquotePage extends React.Component {
       </div>
     );
 
+    const _componentProps = [{
+      "name": "isReverse",
+      "type": "Boolean",
+      "possibleval": "true | false",
+      "default": "false",
+      "description": ""
+    }];
+
     return (
       <div className="component-page">
 
@@ -47,6 +54,7 @@ export default class BlockquotePage extends React.Component {
           </CodeBlocks>
         </div>
 
+        <PropsGrid options={_componentProps}/>
       </div>
     );
   }
