@@ -38,6 +38,44 @@ export default class ButtonPage extends React.Component {
     const _buttonExtraSmallEg = `<Button bSize="xs">Extra Small Button</Button>`;
     const _buttonBlockEg = `<Button isBlock>Block Button</Button>`;
 
+    const _componentProps = [{
+      "name": "bStyle",
+      "type": "String",
+      "possibleval": "default | primary | success | info | warning | danger",
+      "default": "default",
+      "description": ""
+    }, {
+      "name": "bType",
+      "type": "String",
+      "possibleval": "button | submit | reset",
+      "default": "button",
+      "description": ""
+    }, {
+      "name": "isActive",
+      "type": "Boolean",
+      "possibleval": "true | false",
+      "default": "false",
+      "description": ""
+    }, {
+      "name": "isDisabled",
+      "type": "Boolean",
+      "possibleval": "true | false",
+      "default": "false",
+      "description": ""
+    }, {
+      "name": "bSize",
+      "type": "String",
+      "possibleval": "lg | sm | xs",
+      "default": "",
+      "description": ""
+    }, {
+      "name": "isBlock",
+      "type": "Boolean",
+      "possibleval": "true | false",
+      "default": "false",
+      "description": ""
+    }];
+
     return (
       <div className="component-page">
 
@@ -116,6 +154,8 @@ export default class ButtonPage extends React.Component {
             <Button onClick={this.message}>Click</Button>
           </CodeBlocks>
         </div>
+
+        <PropsGrid options={_componentProps}/>
       </div>
     );
   }
