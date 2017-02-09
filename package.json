@@ -48,6 +48,8 @@
     "gsg-panel": "https://github.com/get-set-go/gsg-panel.git",
     "gsg-progress-bar": "https://github.com/get-set-go/gsg-progress-bar.git",
     "gsg-thumbnail": "https://github.com/get-set-go/gsg-thumbnail.git",
+    "gsg-callout": "https://github.com/get-set-go/gsg-callout.git",
+    "gsg-headers": "https://github.com/get-set-go/gsg-headers.git",
     "history": "2.0.1",
     "object-assign": "^4.1.0",
     "react": "^15.4.1",

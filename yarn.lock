@@ -2239,6 +2239,16 @@ growly@^1.2.0:
     react "^15.4.1"
     react-dom "^15.4.1"
 
+"gsg-callout@https://github.com/get-set-go/gsg-callout.git":
+  version "0.0.1"
+  resolved "https://github.com/get-set-go/gsg-callout.git#1a8190c92fdb8b8ac658cb6cd66b4dc4e5f2af70"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
 "gsg-common-style@git+https://github.com/get-set-go/gsg-common-style.git", "gsg-common-style@https://github.com/get-set-go/gsg-common-style.git":
   version "0.0.7"
   resolved "git+https://github.com/get-set-go/gsg-common-style.git#6e66386c06b0c8f4342b7d318b3ec5c304b892db"
@@ -2249,6 +2259,16 @@ growly@^1.2.0:
   dependencies:
     classnames "^2.2.5"
     font-awesome "^4.7.0"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
+"gsg-headers@https://github.com/get-set-go/gsg-headers.git":
+  version "0.0.1"
+  resolved "https://github.com/get-set-go/gsg-headers.git#07e9d8a49437c5b168ee8545934312de7c25df61"
+  dependencies:
+    classnames "^2.2.5"
     gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
     object-assign "^4.1.0"
     react "^15.4.1"
