@@ -9,6 +9,7 @@ import LabelPage from './LabelPage.jsx';
 import ProgressBarPage from './ProgressBarPage.jsx';
 import ThumbnailPage from './ThumbnailPage.jsx';
 import FullScreenPage from './FullScreenPage.jsx';
+import CalloutPage from './CalloutPage.jsx';
 
 module.exports =  {
   AlertPage,
@@ -21,5 +22,6 @@ module.exports =  {
   LabelPage,
   ProgressBarPage,
   ThumbnailPage,
-  FullScreenPage
+  FullScreenPage,
+  CalloutPage
 };
