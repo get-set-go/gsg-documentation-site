@@ -10,6 +10,7 @@ import ProgressBarPage from './ProgressBarPage.jsx';
 import ThumbnailPage from './ThumbnailPage.jsx';
 import FullScreenPage from './FullScreenPage.jsx';
 import CalloutPage from './CalloutPage.jsx';
+import HeadersPage from './HeadersPage.jsx';
 
 module.exports =  {
   AlertPage,
@@ -23,5 +24,6 @@ module.exports =  {
   ProgressBarPage,
   ThumbnailPage,
   FullScreenPage,
-  CalloutPage
+  CalloutPage,
+  HeadersPage
 };

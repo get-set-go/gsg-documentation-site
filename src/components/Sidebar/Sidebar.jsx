@@ -17,6 +17,7 @@ export default class Header extends React.Component {
         <Link to="components/progressbar" className="list-group-item">Progress Bar</Link>
         <Link to="components/loader" className="list-group-item">Loader</Link>
         <Link to="components/callout" className="list-group-item">Callout</Link>
+        <Link to="components/headers" className="list-group-item">Headers</Link>
         <Link to="components/thumbnail" className="list-group-item">Thumbnail</Link>
         <Link to="components/fullscreen" className="list-group-item">Full Screen <span className="pull-right label label-primary">HTML5</span></Link>
       </div>
