@@ -2241,7 +2241,7 @@ growly@^1.2.0:
 
 "gsg-callout@https://github.com/get-set-go/gsg-callout.git":
   version "0.0.1"
-  resolved "https://github.com/get-set-go/gsg-callout.git#1a8190c92fdb8b8ac658cb6cd66b4dc4e5f2af70"
+  resolved "https://github.com/get-set-go/gsg-callout.git#35ad5185e9f717463b391dfe1cedf6a0d04488b2"
   dependencies:
     classnames "^2.2.5"
     gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"

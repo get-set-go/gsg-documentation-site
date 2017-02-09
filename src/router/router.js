@@ -24,7 +24,8 @@ import {
   LabelPage,
   ProgressBarPage,
   ThumbnailPage,
-  FullScreenPage
+  FullScreenPage,
+  CalloutPage
 } from '../pages/Sidebars';
 
 const Routes = (
@@ -49,6 +50,7 @@ const Routes = (
         <Route path = "progressbar" component = {ProgressBarPage} />
         <Route path = "thumbnail" component = {ThumbnailPage} />
         <Route path = "fullscreen" component = {FullScreenPage} />
+        <Route path = "callout" component = {CalloutPage} />
       </Route>
     </Route>
     <Route path="*" component={ErrorPage}/>
