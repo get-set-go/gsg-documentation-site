@@ -2209,6 +2209,16 @@ growly@^1.2.0:
     react "^15.4.1"
     react-dom "^15.4.1"
 
+"gsg-audiobox@https://github.com/get-set-go/gsg-audiobox.git":
+  version "0.0.1"
+  resolved "https://github.com/get-set-go/gsg-audiobox.git#bd5be4b1fc229c700cfd3d080d0b71a4a2f21c59"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
 "gsg-badge@https://github.com/get-set-go/gsg-badge.git":
   version "0.0.8"
   resolved "https://github.com/get-set-go/gsg-badge.git#d1e03b8dbd387176059f66d790a54d10cd8141eb"
@@ -2259,6 +2269,16 @@ growly@^1.2.0:
   dependencies:
     classnames "^2.2.5"
     font-awesome "^4.7.0"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
+"gsg-gravatar-preview@https://github.com/get-set-go/gsg-gravatar-preview.git":
+  version "0.0.2"
+  resolved "https://github.com/get-set-go/gsg-gravatar-preview.git#3e7681b275a515e7feba5f76f7c58dae51f6f78a"
+  dependencies:
+    classnames "^2.2.5"
     gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
     object-assign "^4.1.0"
     react "^15.4.1"
@@ -2327,6 +2347,16 @@ growly@^1.2.0:
 "gsg-thumbnail@https://github.com/get-set-go/gsg-thumbnail.git":
   version "0.0.3"
   resolved "https://github.com/get-set-go/gsg-thumbnail.git#d7f4666bee39e279f6709f1b90ef3a4a3b46f7a9"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
+"gsg-videobox@https://github.com/get-set-go/gsg-videobox.git":
+  version "0.0.1"
+  resolved "https://github.com/get-set-go/gsg-videobox.git#c8331bf3cbb18161cbee32cedd435a9fd743758f"
   dependencies:
     classnames "^2.2.5"
     gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"

@@ -26,7 +26,10 @@ import {
   ThumbnailPage,
   FullScreenPage,
   CalloutPage,
-  HeadersPage
+  HeadersPage,
+  GravatarPreviewPage,
+  AudioBoxPage,
+  VideoBoxPage
 } from '../pages/Sidebars';
 
 const Routes = (
@@ -53,6 +56,9 @@ const Routes = (
         <Route path = "thumbnail" component = {ThumbnailPage} />
         <Route path = "fullscreen" component = {FullScreenPage} />
         <Route path = "callout" component = {CalloutPage} />
+        <Route path = "gravatar" component = {GravatarPreviewPage} />
+        <Route path = "audiobox" component = {AudioBoxPage} />
+        <Route path = "videobox" component = {VideoBoxPage} />
       </Route>
     </Route>
     <Route path="*" component={ErrorPage}/>

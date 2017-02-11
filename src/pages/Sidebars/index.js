@@ -11,6 +11,11 @@ import ThumbnailPage from './ThumbnailPage.jsx';
 import FullScreenPage from './FullScreenPage.jsx';
 import CalloutPage from './CalloutPage.jsx';
 import HeadersPage from './HeadersPage.jsx';
+import ClipboardPage from './ClipboardPage.jsx';
+import AudioBoxPage from './AudioBoxPage.jsx';
+import VideoBoxPage from './VideoBoxPage.jsx';
+import NetworkPage from './NetworkPage.jsx';
+import GravatarPreviewPage from './GravatarPreviewPage.jsx';
 
 module.exports =  {
   AlertPage,
@@ -25,5 +30,10 @@ module.exports =  {
   ThumbnailPage,
   FullScreenPage,
   CalloutPage,
-  HeadersPage
+  HeadersPage,
+  ClipboardPage,
+  AudioBoxPage,
+  VideoBoxPage,
+  NetworkPage,
+  GravatarPreviewPage
 };
