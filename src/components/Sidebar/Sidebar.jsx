@@ -20,6 +20,11 @@ export default class Header extends React.Component {
         <Link to="components/headers" className="list-group-item">Headers</Link>
         <Link to="components/thumbnail" className="list-group-item">Thumbnail</Link>
         <Link to="components/fullscreen" className="list-group-item">Full Screen <span className="pull-right label label-primary">HTML5</span></Link>
+        <Link to="components/network" className="list-group-item">Network <span className="pull-right label label-primary">HTML5</span></Link>
+        <Link to="components/clipboard" className="list-group-item">Clipboard <span className="pull-right label label-primary">HTML5</span></Link>
+        <Link to="components/audiobox" className="list-group-item">Audio Box <span className="pull-right label label-primary">HTML5</span></Link>
+        <Link to="components/videobox" className="list-group-item">Video Box <span className="pull-right label label-primary">HTML5</span></Link>
+        <Link to="components/gravatar" className="list-group-item">Gravatar Preview<span className="pull-right label label-primary">API</span></Link>
       </div>
     );
   }
