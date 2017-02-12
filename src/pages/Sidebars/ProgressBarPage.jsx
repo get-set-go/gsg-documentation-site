@@ -16,15 +16,15 @@ export default class ProgressBarPage extends React.Component {
     const _progressBarWarningEg = `<ProgressBar bStyle="warning" bProgress="70">70% scanning</ProgressBar>`;
     const _progressBarDangerEg = `<ProgressBar bStyle="danger" bProgress="90">90% scanning</ProgressBar>`;
 
-    const _progressBarIsOutSideEg = `<ProgressBar bProgress="10" isOutside="true">10% scanning</ProgressBar>`;
+    const _progressBarIsOutSideEg = `<ProgressBar bProgress="10" isOutside={true}>10% scanning</ProgressBar>`;
 
-    const _progressBarLAlignEg = `<ProgressBar bProgress="10" isOutside="true">Text Aligned to left by default</ProgressBar>`;
-    const _progressBarCAlignEg = `<ProgressBar bProgress="10" isOutside="true" bAlign="center">Text Aligned to center</ProgressBar>`;
-    const _progressBarRAlignEg = `<ProgressBar bProgress="10" isOutside="true" bAlign="right">Text Aligned to right</ProgressBar>`;
+    const _progressBarLAlignEg = `<ProgressBar bProgress="10" isOutside={true}>Text Aligned to left by default</ProgressBar>`;
+    const _progressBarCAlignEg = `<ProgressBar bProgress="10" isOutside={true} bAlign="center">Text Aligned to center</ProgressBar>`;
+    const _progressBarRAlignEg = `<ProgressBar bProgress="10" isOutside={true} bAlign="right">Text Aligned to right</ProgressBar>`;
 
-    const _progressBarStripedEg = `<ProgressBar isStriped="true" bProgress="40"></ProgressBar>`;
+    const _progressBarStripedEg = `<ProgressBar isStriped={true} bProgress="40"></ProgressBar>`;
 
-    const _progressBarActiveEg = `<ProgressBar isStriped="true" isActive="true" bProgress="40"></ProgressBar>`;
+    const _progressBarActiveEg = `<ProgressBar isStriped={true} isActive={true} bProgress="40"></ProgressBar>`;
 
     const _componentProps = [{
       "name": "bStyle",
@@ -57,7 +57,7 @@ export default class ProgressBarPage extends React.Component {
       "default": "false",
       "description": ""
     }];
-    
+
     return (
       <div className="component-page">
 
@@ -85,28 +85,28 @@ export default class ProgressBarPage extends React.Component {
             <ProgressBar bStyle="danger" bProgress="90">90% scanning</ProgressBar>
           </CodeBlocks>
           <CodeBlocks title="Example - ProgressBar with text outside" code={_progressBarIsOutSideEg}>
-            <ProgressBar bProgress="10" isOutside="true">10% scanning</ProgressBar>
+            <ProgressBar bProgress="10" isOutside={true}>10% scanning</ProgressBar>
           </CodeBlocks>
         </div>
 
         <div className="component-box component-example">
           <CodeBlocks title="Example - Default left aligned text" code={_progressBarLAlignEg}>
-            <ProgressBar bProgress="10" isOutside="true">Text Aligned to left by default</ProgressBar>
+            <ProgressBar bProgress="10" isOutside={true}>Text Aligned to left by default</ProgressBar>
           </CodeBlocks>
           <CodeBlocks title="Example - Center aligned text" code={_progressBarCAlignEg}>
-            <ProgressBar bProgress="10" isOutside="true" bAlign="center">Text Aligned to center</ProgressBar>
+            <ProgressBar bProgress="10" isOutside={true} bAlign="center">Text Aligned to center</ProgressBar>
           </CodeBlocks>
           <CodeBlocks title="Example - Right aligned text" code={_progressBarRAlignEg}>
-            <ProgressBar bProgress="10" isOutside="true" bAlign="right">Text Aligned to right</ProgressBar>
+            <ProgressBar bProgress="10" isOutside={true} bAlign="right">Text Aligned to right</ProgressBar>
           </CodeBlocks>
         </div>
 
         <div className="component-box component-example">
           <CodeBlocks title="Example - ProgressBar striped with non-active state" code={_progressBarStripedEg}>
-            <ProgressBar isStriped="true" bProgress="40"></ProgressBar>
+            <ProgressBar isStriped={true} bProgress="40"></ProgressBar>
           </CodeBlocks>
           <CodeBlocks title="Example - ProgressBar active state" code={_progressBarActiveEg}>
-            <ProgressBar isStriped="true" isActive="true" bProgress="40"></ProgressBar>
+            <ProgressBar isStriped={true} isActive={true} bProgress="40"></ProgressBar>
           </CodeBlocks>
         </div>
 
