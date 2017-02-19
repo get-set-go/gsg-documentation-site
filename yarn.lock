@@ -2324,6 +2324,16 @@ growly@^1.2.0:
     react "^15.4.1"
     react-dom "^15.4.1"
 
+"gsg-navbar@https://github.com/get-set-go/gsg-navbar.git":
+  version "0.0.1"
+  resolved "https://github.com/get-set-go/gsg-navbar.git#b4bb0dc374c3a28741c063bd84984be3fa937f05"
+  dependencies:
+    classnames "^2.2.5"
+    gsg-common-style "https://github.com/get-set-go/gsg-common-style.git"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+
 "gsg-panel@https://github.com/get-set-go/gsg-panel.git":
   version "0.0.8"
   resolved "https://github.com/get-set-go/gsg-panel.git#79a6f8e19c6441f36d16838e93553febb85c895b"
