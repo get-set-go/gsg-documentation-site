@@ -29,7 +29,8 @@ import {
   HeadersPage,
   GravatarPreviewPage,
   AudioBoxPage,
-  VideoBoxPage
+  VideoBoxPage,
+  NavbarPage
 } from '../pages/Sidebars';
 
 const Routes = (
@@ -59,6 +60,7 @@ const Routes = (
         <Route path = "gravatar" component = {GravatarPreviewPage} />
         <Route path = "audiobox" component = {AudioBoxPage} />
         <Route path = "videobox" component = {VideoBoxPage} />
+        <Route path = "navbar" component = {NavbarPage} />
       </Route>
     </Route>
     <Route path="*" component={ErrorPage}/>

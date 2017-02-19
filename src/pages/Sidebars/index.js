@@ -16,6 +16,7 @@ import AudioBoxPage from './AudioBoxPage.jsx';
 import VideoBoxPage from './VideoBoxPage.jsx';
 import NetworkPage from './NetworkPage.jsx';
 import GravatarPreviewPage from './GravatarPreviewPage.jsx';
+import NavbarPage from './NavbarPage.jsx';
 
 module.exports =  {
   AlertPage,
@@ -35,5 +36,6 @@ module.exports =  {
   AudioBoxPage,
   VideoBoxPage,
   NetworkPage,
-  GravatarPreviewPage
+  GravatarPreviewPage,
+  NavbarPage
 };

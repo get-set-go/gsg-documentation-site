@@ -14,6 +14,7 @@ export default class Header extends React.Component {
         <Link to="components/badge" className="list-group-item">Badge</Link>
         <Link to="components/alert" className="list-group-item">Alert</Link>
         <Link to="components/panel" className="list-group-item">Panel</Link>
+        <Link to="components/navbar" className="list-group-item">Navbar</Link>
         <Link to="components/progressbar" className="list-group-item">Progress Bar</Link>
         <Link to="components/loader" className="list-group-item">Loader</Link>
         <Link to="components/callout" className="list-group-item">Callout</Link>
