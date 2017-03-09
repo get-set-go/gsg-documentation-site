@@ -3,8 +3,6 @@ import './Header.less';
 import React from 'react';
 import { Link } from 'react-router';
 
-import logo from '../../assets/get-set-go_logo.png';
-
 export default class Header extends React.Component {
   render() {
     return (
@@ -18,7 +16,7 @@ export default class Header extends React.Component {
               <span className="icon-bar"/>
             </button>
             <a className="navbar-brand" href="#">
-              <img src={logo}/> Get-Set-Go <sup>v0.0.1</sup>
+              Get-Set-Go <sup>v0.0.1</sup>
             </a>
           </div>
 
